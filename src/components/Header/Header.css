@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #080C19;
+    height: 75px;
+}
+
+.header img {
+    margin-left: 50px;
+    border-radius: 25px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+    margin-right: 35px
+}
+
+.link {
+    margin-right: 20px;
+    font-family: 'Bakbak One', cursive;
+    cursor: pointer;
+    color: #fbdd1b;
+}
+
+.link:hover {
+    color: #fbdd1b;
+    opacity: .5;
+}

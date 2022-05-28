@@ -1,0 +1,51 @@
+#videos  {
+    /* background-color: #5D524A; */
+    background-image: linear-gradient(#322b19, #b8994c, #EBB216);
+    /* background-image: linear-gradient(#5D524A, #a88266, #d78a52); */
+    height: 95vh;
+    padding: 90px 0;
+    /* background-image: url(../../assets//guitars.jpg); */
+    /* background-position: center; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
+}
+
+.video-background {
+    position: absolute;
+    width: 100vw;
+    height: 95vh;
+    z-index: -1;
+    /* filter: blur(4px); */
+    /* opacity: .7; */
+}
+
+.video-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 50px
+}
+
+.vid-card {
+    color: #fff;
+    padding-top: 20px;
+}
+
+.vid-card:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.vid-image {
+    width: 200px;
+    margin: 0 20px;
+}
+
+.vid-title {
+    font-size: 16x;
+    text-align: center;
+}
