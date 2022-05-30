@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import "./Header.css";
 import logo from '../../assets/Beard_of_Bees_Logo.jpg'
+import { HiMenu } from 'react-icons/hi';
+import "./Header.css";
 
 const Header = () => {
     const activeStyle = { fontWeight: 'bold', textDecoration: 'underline' };
@@ -49,6 +50,13 @@ const Header = () => {
                     duration={500}>
                     Contact
                 </Link>
+            </div>
+
+            <div className="menu">
+                <div className="test">
+                    <HiMenu />
+                </div>
+                {/* TODO add items and a cancel button and logic */}
             </div>
         </div>
     )

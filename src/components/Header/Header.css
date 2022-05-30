@@ -29,3 +29,25 @@
     color: #fbdd1b;
     opacity: .5;
 }
+
+@media screen and (max-width: 700px) {
+    .header img {
+        margin-left: 10px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .test {
+        font-size: 50px;
+        cursor: pointer;
+        color: #fbdd1b;
+        padding-right: 20px;
+    }
+
+    /* .link {
+        margin-right: 3px;
+        margin-left: 3px;
+    } */
+}

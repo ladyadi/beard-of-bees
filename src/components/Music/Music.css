@@ -10,3 +10,16 @@
     justify-content: space-around;
     align-items: start;
 }
+
+@media screen and (max-width: 700px) {
+    .albums {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .albums iframe {
+        margin-top: 10px;
+    }
+}

@@ -29,3 +29,21 @@
     align-items: center;
     color: #fff;
 }
+
+@media screen and (max-width: 700px) {
+    #meet-the-band {
+        height: 200vh;
+    }
+
+    .band-members {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        color: #fff;
+    }
+
+    .band-members img {
+        width: 150px;
+    }
+}

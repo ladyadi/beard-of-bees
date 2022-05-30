@@ -1,5 +1,5 @@
 import React from 'react';
-// import "./Videos.css";
+import "./Featured-Video.css";
 
 const FeaturedVideos = ({ url }) => {
 

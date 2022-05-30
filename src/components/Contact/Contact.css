@@ -24,7 +24,7 @@ form {
 
 .form-item {
     margin-bottom: 20px;
-    
+
 }
 
 input {
@@ -53,4 +53,33 @@ button {
     color: #F8CE27;
     text-align: center;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px) {
+    .contact-form img {
+        display: none;
+    }
+
+    .contact-form {
+        display: block;
+        padding: 20px;
+    }
+
+    .social-container {
+        justify-content: space-evenly;
+    }
+
+    form {
+        width: 100%;
+        padding: 0;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
 }
