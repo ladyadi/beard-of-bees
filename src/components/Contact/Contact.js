@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { cloneElement, useState } from 'react';
 import { send } from 'emailjs-com';
 import foodTruckRally from '../../assets/food-truck-rally.jpg';
 import { FaFacebookSquare, FaYoutubeSquare } from 'react-icons/fa';
@@ -14,6 +14,7 @@ const Contact = () => {
 
     const onSubmit = (e) => {
         e.preventDefault();
+        console.log('test', process.env.REACT_APP_TEMPLATE)
         send(
             process.env.REACT_APP_SERVICE,
             process.env.REACT_APP_TEMPLATE,
@@ -53,6 +54,7 @@ const Contact = () => {
                             placeholder='Name'
                             value={toSend.from_name}
                             onChange={handleChange}
+                            required
                         />
                     </div>
                     <div className="form-item">
@@ -62,6 +64,7 @@ const Contact = () => {
                             placeholder='Email'
                             value={toSend.reply_to}
                             onChange={handleChange}
+                            required
                         />
                     </div>
                     <div className="form-item">
@@ -71,6 +74,7 @@ const Contact = () => {
                             placeholder='Message'
                             value={toSend.message}
                             onChange={handleChange}
+                            required
                         >
                         </textarea>
                     </div>
