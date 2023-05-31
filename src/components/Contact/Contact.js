@@ -14,7 +14,6 @@ const Contact = () => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        console.log('test', process.env.REACT_APP_TEMPLATE)
         send(
             process.env.REACT_APP_SERVICE,
             process.env.REACT_APP_TEMPLATE,
@@ -22,10 +21,10 @@ const Contact = () => {
             process.env.REACT_APP_KEY
         )
             .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
+                // console.log('SUCCESS!', response.status, response.text);
             })
             .catch((err) => {
-                console.log('FAILED...', err);
+                // console.log('FAILED...', err);
             });
     };
 
