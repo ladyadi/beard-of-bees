@@ -1,4 +1,4 @@
-import React, { cloneElement, useState } from 'react';
+import React, { useState } from 'react';
 import { send } from 'emailjs-com';
 import foodTruckRally from '../../assets/food-truck-rally.jpg';
 import { FaFacebookSquare, FaYoutubeSquare } from 'react-icons/fa';
@@ -36,13 +36,13 @@ const Contact = () => {
         <div id="contact">
             <h1>Contact</h1>
             <div className="contact-form">
-                <img src={foodTruckRally} alt="Band Contact Image" width="45%" />
+                <img src={foodTruckRally} alt="Band Image" width="45%" />
                 <form onSubmit={onSubmit}>
                     <div className="social-container">
-                        <a href="https://www.facebook.com/beardbeesband/" target="_blank">
+                        <a href="https://www.facebook.com/beardbeesband/" target="_blank" rel="noopener noreferrer">
                             <FaFacebookSquare className='social-icon' />
                         </a>
-                        <a href="https://www.youtube.com/channel/UCcbTMQjpoYMk8yj4vP4BnyQ" target="_blank">
+                        <a href="https://www.youtube.com/channel/UCcbTMQjpoYMk8yj4vP4BnyQ" target="_blank" rel="noopener noreferrer">
                             <FaYoutubeSquare className='social-icon' />
                         </a>
                     </div>

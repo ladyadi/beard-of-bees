@@ -3,7 +3,6 @@ import "./Band.css";
 import michael from '../../assets/michael-hardman.png'
 import aaron from '../../assets/aaron-hardman.png';
 import ryan from '../../assets/ryan-hardman.png';
-import shayla from '../../assets/shayla-hardman.png';
 import chase from '../../assets/chase-howell.png';
 import jesse from '../../assets/jesse-hardman.png';
 

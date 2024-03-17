@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import FeaturedVideos from './Featured-Video';
 import "./Videos.css";
-import guitars from '../../assets//guitars.jpg';
 import runFromMyHeart from '../../assets/run_from_my_heart.png';
 import theGrey from '../../assets/the_grey.png';
 import goldenSpike from '../../assets/golden_spike.png';
