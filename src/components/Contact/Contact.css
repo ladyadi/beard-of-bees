@@ -2,12 +2,12 @@
     background-color: #000;
     height: 95vh;
     padding: 60px 0;
-    /* text-align: center; */
 }
 
 .contact-form {
     display: flex;
     justify-content: space-evenly;
+    background: #000;
 }
 
 form {
@@ -53,6 +53,13 @@ button {
     color: #F8CE27;
     text-align: center;
     cursor: pointer;
+}
+
+.response {
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 

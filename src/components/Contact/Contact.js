@@ -6,6 +6,7 @@ import "./Contact.css";
 
 
 const Contact = () => {
+    const [responseMsg, setResponseMsg] = useState('');
     const [toSend, setToSend] = useState({
         from_name: '',
         message: '',
@@ -14,6 +15,7 @@ const Contact = () => {
 
     const onSubmit = (e) => {
         e.preventDefault();
+        console.log(toSend)
         send(
             process.env.REACT_APP_SERVICE,
             process.env.REACT_APP_TEMPLATE,
@@ -21,10 +23,10 @@ const Contact = () => {
             process.env.REACT_APP_KEY
         )
             .then((response) => {
-                // console.log('SUCCESS!', response.status, response.text);
+                setResponseMsg(`Message Successfully Sent!`)
             })
             .catch((err) => {
-                // console.log('FAILED...', err);
+                setResponseMsg(`Message Failed to send. Please reach out directly to thebeardofbeesmgmt@gmail.com.`)
             });
     };
 
@@ -38,6 +40,7 @@ const Contact = () => {
             <div className="contact-form">
                 <img src={foodTruckRally} alt="Band Image" width="45%" />
                 <form onSubmit={onSubmit}>
+                    <div className='response'>{responseMsg}</div>
                     <div className="social-container">
                         <a href="https://www.facebook.com/beardbeesband/" target="_blank" rel="noopener noreferrer">
                             <FaFacebookSquare className='social-icon' />
@@ -80,7 +83,6 @@ const Contact = () => {
                     <button type='submit'>Submit</button>
                 </form>
             </div>
-
         </div>
     )
 }
